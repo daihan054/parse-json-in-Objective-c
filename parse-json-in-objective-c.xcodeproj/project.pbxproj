@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7B591F62A2EF89300D9505B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B591F52A2EF89300D9505B /* AppDelegate.m */; };
+		C7B591F92A2EF89300D9505B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B591F82A2EF89300D9505B /* SceneDelegate.m */; };
+		C7B591FC2A2EF89300D9505B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B591FB2A2EF89300D9505B /* ViewController.m */; };
+		C7B591FF2A2EF89300D9505B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B591FD2A2EF89300D9505B /* Main.storyboard */; };
+		C7B592012A2EF89500D9505B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7B592002A2EF89500D9505B /* Assets.xcassets */; };
+		C7B592042A2EF89500D9505B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7B592022A2EF89500D9505B /* LaunchScreen.storyboard */; };
+		C7B592072A2EF89500D9505B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592062A2EF89500D9505B /* main.m */; };
+		C7B592112A2EF89600D9505B /* parse_json_in_objective_cTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592102A2EF89600D9505B /* parse_json_in_objective_cTests.m */; };
+		C7B5921B2A2EF89600D9505B /* parse_json_in_objective_cUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5921A2A2EF89600D9505B /* parse_json_in_objective_cUITests.m */; };
+		C7B5921D2A2EF89600D9505B /* parse_json_in_objective_cUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5921C2A2EF89600D9505B /* parse_json_in_objective_cUITestsLaunchTests.m */; };
+		C7B592562A2EF8E300D9505B /* MediaAttach.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5922A2A2EF8E200D9505B /* MediaAttach.m */; };
+		C7B592572A2EF8E300D9505B /* AppointmentAttachmentPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5922B2A2EF8E200D9505B /* AppointmentAttachmentPayload.m */; };
+		C7B592582A2EF8E300D9505B /* ChatBotResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5922E2A2EF8E200D9505B /* ChatBotResponse.m */; };
+		C7B592592A2EF8E300D9505B /* AppointmentMessageDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5922F2A2EF8E200D9505B /* AppointmentMessageDetails.m */; };
+		C7B5925A2A2EF8E300D9505B /* AppointmentButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592322A2EF8E200D9505B /* AppointmentButton.m */; };
+		C7B5925B2A2EF8E300D9505B /* AppointmentAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592332A2EF8E200D9505B /* AppointmentAttachment.m */; };
+		C7B5925C2A2EF8E300D9505B /* CarouselButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592352A2EF8E200D9505B /* CarouselButton.m */; };
+		C7B5925D2A2EF8E300D9505B /* AttachmentPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592392A2EF8E200D9505B /* AttachmentPayload.m */; };
+		C7B5925E2A2EF8E300D9505B /* QuickReplies.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5923A2A2EF8E200D9505B /* QuickReplies.m */; };
+		C7B5925F2A2EF8E300D9505B /* AppointmentPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5923C2A2EF8E200D9505B /* AppointmentPayload.m */; };
+		C7B592602A2EF8E300D9505B /* AppointmentEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5923E2A2EF8E200D9505B /* AppointmentEvent.m */; };
+		C7B592612A2EF8E300D9505B /* ChatBotButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592412A2EF8E200D9505B /* ChatBotButton.m */; };
+		C7B592622A2EF8E300D9505B /* AppointmentMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592432A2EF8E200D9505B /* AppointmentMessage.m */; };
+		C7B592632A2EF8E300D9505B /* AppointmentTime.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592442A2EF8E300D9505B /* AppointmentTime.m */; };
+		C7B592642A2EF8E300D9505B /* AppointmentData.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592452A2EF8E300D9505B /* AppointmentData.m */; };
+		C7B592652A2EF8E300D9505B /* Attachment.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592492A2EF8E300D9505B /* Attachment.m */; };
+		C7B592662A2EF8E300D9505B /* BotMessageDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5924A2A2EF8E300D9505B /* BotMessageDetails.m */; };
+		C7B592672A2EF8E300D9505B /* AppointmentAttendee.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5924B2A2EF8E300D9505B /* AppointmentAttendee.m */; };
+		C7B592682A2EF8E300D9505B /* AppointmentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5924C2A2EF8E300D9505B /* AppointmentInfo.m */; };
+		C7B592692A2EF8E300D9505B /* BotMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B5924F2A2EF8E300D9505B /* BotMessage.m */; };
+		C7B5926A2A2EF8E300D9505B /* BotMessageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592512A2EF8E300D9505B /* BotMessageInfo.m */; };
+		C7B5926B2A2EF8E300D9505B /* CarouselElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C7B592532A2EF8E300D9505B /* CarouselElement.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7B5920D2A2EF89600D9505B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7B591E92A2EF89300D9505B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7B591F02A2EF89300D9505B;
+			remoteInfo = "parse-json-in-objective-c";
+		};
+		C7B592172A2EF89600D9505B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7B591E92A2EF89300D9505B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7B591F02A2EF89300D9505B;
+			remoteInfo = "parse-json-in-objective-c";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7B591F12A2EF89300D9505B /* parse-json-in-objective-c.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "parse-json-in-objective-c.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B591F42A2EF89300D9505B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7B591F52A2EF89300D9505B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7B591F72A2EF89300D9505B /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		C7B591F82A2EF89300D9505B /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		C7B591FA2A2EF89300D9505B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C7B591FB2A2EF89300D9505B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C7B591FE2A2EF89300D9505B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7B592002A2EF89500D9505B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C7B592032A2EF89500D9505B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C7B592052A2EF89500D9505B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7B592062A2EF89500D9505B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7B5920C2A2EF89600D9505B /* parse-json-in-objective-cTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "parse-json-in-objective-cTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B592102A2EF89600D9505B /* parse_json_in_objective_cTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parse_json_in_objective_cTests.m; sourceTree = "<group>"; };
+		C7B592162A2EF89600D9505B /* parse-json-in-objective-cUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "parse-json-in-objective-cUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B5921A2A2EF89600D9505B /* parse_json_in_objective_cUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parse_json_in_objective_cUITests.m; sourceTree = "<group>"; };
+		C7B5921C2A2EF89600D9505B /* parse_json_in_objective_cUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = parse_json_in_objective_cUITestsLaunchTests.m; sourceTree = "<group>"; };
+		C7B5922A2A2EF8E200D9505B /* MediaAttach.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaAttach.m; sourceTree = "<group>"; };
+		C7B5922B2A2EF8E200D9505B /* AppointmentAttachmentPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentAttachmentPayload.m; sourceTree = "<group>"; };
+		C7B5922C2A2EF8E200D9505B /* QuickReplies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickReplies.h; sourceTree = "<group>"; };
+		C7B5922D2A2EF8E200D9505B /* CarouselElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselElement.h; sourceTree = "<group>"; };
+		C7B5922E2A2EF8E200D9505B /* ChatBotResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotResponse.m; sourceTree = "<group>"; };
+		C7B5922F2A2EF8E200D9505B /* AppointmentMessageDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentMessageDetails.m; sourceTree = "<group>"; };
+		C7B592302A2EF8E200D9505B /* AppointmentEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentEvent.h; sourceTree = "<group>"; };
+		C7B592312A2EF8E200D9505B /* AppointmentButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentButton.h; sourceTree = "<group>"; };
+		C7B592322A2EF8E200D9505B /* AppointmentButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentButton.m; sourceTree = "<group>"; };
+		C7B592332A2EF8E200D9505B /* AppointmentAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentAttachment.m; sourceTree = "<group>"; };
+		C7B592342A2EF8E200D9505B /* AttachmentPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttachmentPayload.h; sourceTree = "<group>"; };
+		C7B592352A2EF8E200D9505B /* CarouselButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselButton.m; sourceTree = "<group>"; };
+		C7B592362A2EF8E200D9505B /* ChatBotResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotResponse.h; sourceTree = "<group>"; };
+		C7B592372A2EF8E200D9505B /* AppointmentPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentPayload.h; sourceTree = "<group>"; };
+		C7B592382A2EF8E200D9505B /* MediaAttach.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaAttach.h; sourceTree = "<group>"; };
+		C7B592392A2EF8E200D9505B /* AttachmentPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttachmentPayload.m; sourceTree = "<group>"; };
+		C7B5923A2A2EF8E200D9505B /* QuickReplies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickReplies.m; sourceTree = "<group>"; };
+		C7B5923B2A2EF8E200D9505B /* CarouselButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselButton.h; sourceTree = "<group>"; };
+		C7B5923C2A2EF8E200D9505B /* AppointmentPayload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentPayload.m; sourceTree = "<group>"; };
+		C7B5923D2A2EF8E200D9505B /* AppointmentMessageDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentMessageDetails.h; sourceTree = "<group>"; };
+		C7B5923E2A2EF8E200D9505B /* AppointmentEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentEvent.m; sourceTree = "<group>"; };
+		C7B5923F2A2EF8E200D9505B /* AppointmentTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentTime.h; sourceTree = "<group>"; };
+		C7B592402A2EF8E200D9505B /* ChatBotButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatBotButton.h; sourceTree = "<group>"; };
+		C7B592412A2EF8E200D9505B /* ChatBotButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatBotButton.m; sourceTree = "<group>"; };
+		C7B592422A2EF8E200D9505B /* AppointmentAttendee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentAttendee.h; sourceTree = "<group>"; };
+		C7B592432A2EF8E200D9505B /* AppointmentMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentMessage.m; sourceTree = "<group>"; };
+		C7B592442A2EF8E300D9505B /* AppointmentTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentTime.m; sourceTree = "<group>"; };
+		C7B592452A2EF8E300D9505B /* AppointmentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentData.m; sourceTree = "<group>"; };
+		C7B592462A2EF8E300D9505B /* AppointmentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentData.h; sourceTree = "<group>"; };
+		C7B592472A2EF8E300D9505B /* BotMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BotMessage.h; sourceTree = "<group>"; };
+		C7B592482A2EF8E300D9505B /* BotMessageDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BotMessageDetails.h; sourceTree = "<group>"; };
+		C7B592492A2EF8E300D9505B /* Attachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attachment.m; sourceTree = "<group>"; };
+		C7B5924A2A2EF8E300D9505B /* BotMessageDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BotMessageDetails.m; sourceTree = "<group>"; };
+		C7B5924B2A2EF8E300D9505B /* AppointmentAttendee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentAttendee.m; sourceTree = "<group>"; };
+		C7B5924C2A2EF8E300D9505B /* AppointmentInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppointmentInfo.m; sourceTree = "<group>"; };
+		C7B5924D2A2EF8E300D9505B /* Attachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attachment.h; sourceTree = "<group>"; };
+		C7B5924E2A2EF8E300D9505B /* AppointmentAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentAttachment.h; sourceTree = "<group>"; };
+		C7B5924F2A2EF8E300D9505B /* BotMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BotMessage.m; sourceTree = "<group>"; };
+		C7B592502A2EF8E300D9505B /* BotMessageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BotMessageInfo.h; sourceTree = "<group>"; };
+		C7B592512A2EF8E300D9505B /* BotMessageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BotMessageInfo.m; sourceTree = "<group>"; };
+		C7B592522A2EF8E300D9505B /* AppointmentAttachmentPayload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentAttachmentPayload.h; sourceTree = "<group>"; };
+		C7B592532A2EF8E300D9505B /* CarouselElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselElement.m; sourceTree = "<group>"; };
+		C7B592542A2EF8E300D9505B /* AppointmentMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentMessage.h; sourceTree = "<group>"; };
+		C7B592552A2EF8E300D9505B /* AppointmentInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppointmentInfo.h; sourceTree = "<group>"; };
+		C7B5926C2A2EF9EB00D9505B /* Model_class.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Model_class.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7B591EE2A2EF89300D9505B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B592092A2EF89600D9505B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B592132A2EF89600D9505B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7B591E82A2EF89300D9505B = {
+			isa = PBXGroup;
+			children = (
+				C7B591F32A2EF89300D9505B /* parse-json-in-objective-c */,
+				C7B5920F2A2EF89600D9505B /* parse-json-in-objective-cTests */,
+				C7B592192A2EF89600D9505B /* parse-json-in-objective-cUITests */,
+				C7B591F22A2EF89300D9505B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7B591F22A2EF89300D9505B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7B591F12A2EF89300D9505B /* parse-json-in-objective-c.app */,
+				C7B5920C2A2EF89600D9505B /* parse-json-in-objective-cTests.xctest */,
+				C7B592162A2EF89600D9505B /* parse-json-in-objective-cUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7B591F32A2EF89300D9505B /* parse-json-in-objective-c */ = {
+			isa = PBXGroup;
+			children = (
+				C7B592292A2EF8CD00D9505B /* Model class */,
+				C7B591F42A2EF89300D9505B /* AppDelegate.h */,
+				C7B591F52A2EF89300D9505B /* AppDelegate.m */,
+				C7B591F72A2EF89300D9505B /* SceneDelegate.h */,
+				C7B591F82A2EF89300D9505B /* SceneDelegate.m */,
+				C7B591FA2A2EF89300D9505B /* ViewController.h */,
+				C7B591FB2A2EF89300D9505B /* ViewController.m */,
+				C7B591FD2A2EF89300D9505B /* Main.storyboard */,
+				C7B592002A2EF89500D9505B /* Assets.xcassets */,
+				C7B592022A2EF89500D9505B /* LaunchScreen.storyboard */,
+				C7B592052A2EF89500D9505B /* Info.plist */,
+				C7B592062A2EF89500D9505B /* main.m */,
+			);
+			path = "parse-json-in-objective-c";
+			sourceTree = "<group>";
+		};
+		C7B5920F2A2EF89600D9505B /* parse-json-in-objective-cTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7B5926C2A2EF9EB00D9505B /* Model_class.json */,
+				C7B592102A2EF89600D9505B /* parse_json_in_objective_cTests.m */,
+			);
+			path = "parse-json-in-objective-cTests";
+			sourceTree = "<group>";
+		};
+		C7B592192A2EF89600D9505B /* parse-json-in-objective-cUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C7B5921A2A2EF89600D9505B /* parse_json_in_objective_cUITests.m */,
+				C7B5921C2A2EF89600D9505B /* parse_json_in_objective_cUITestsLaunchTests.m */,
+			);
+			path = "parse-json-in-objective-cUITests";
+			sourceTree = "<group>";
+		};
+		C7B592292A2EF8CD00D9505B /* Model class */ = {
+			isa = PBXGroup;
+			children = (
+				C7B5924E2A2EF8E300D9505B /* AppointmentAttachment.h */,
+				C7B592332A2EF8E200D9505B /* AppointmentAttachment.m */,
+				C7B592522A2EF8E300D9505B /* AppointmentAttachmentPayload.h */,
+				C7B5922B2A2EF8E200D9505B /* AppointmentAttachmentPayload.m */,
+				C7B592422A2EF8E200D9505B /* AppointmentAttendee.h */,
+				C7B5924B2A2EF8E300D9505B /* AppointmentAttendee.m */,
+				C7B592312A2EF8E200D9505B /* AppointmentButton.h */,
+				C7B592322A2EF8E200D9505B /* AppointmentButton.m */,
+				C7B592462A2EF8E300D9505B /* AppointmentData.h */,
+				C7B592452A2EF8E300D9505B /* AppointmentData.m */,
+				C7B592302A2EF8E200D9505B /* AppointmentEvent.h */,
+				C7B5923E2A2EF8E200D9505B /* AppointmentEvent.m */,
+				C7B592552A2EF8E300D9505B /* AppointmentInfo.h */,
+				C7B5924C2A2EF8E300D9505B /* AppointmentInfo.m */,
+				C7B592542A2EF8E300D9505B /* AppointmentMessage.h */,
+				C7B592432A2EF8E200D9505B /* AppointmentMessage.m */,
+				C7B5923D2A2EF8E200D9505B /* AppointmentMessageDetails.h */,
+				C7B5922F2A2EF8E200D9505B /* AppointmentMessageDetails.m */,
+				C7B592372A2EF8E200D9505B /* AppointmentPayload.h */,
+				C7B5923C2A2EF8E200D9505B /* AppointmentPayload.m */,
+				C7B5923F2A2EF8E200D9505B /* AppointmentTime.h */,
+				C7B592442A2EF8E300D9505B /* AppointmentTime.m */,
+				C7B5924D2A2EF8E300D9505B /* Attachment.h */,
+				C7B592492A2EF8E300D9505B /* Attachment.m */,
+				C7B592342A2EF8E200D9505B /* AttachmentPayload.h */,
+				C7B592392A2EF8E200D9505B /* AttachmentPayload.m */,
+				C7B592472A2EF8E300D9505B /* BotMessage.h */,
+				C7B5924F2A2EF8E300D9505B /* BotMessage.m */,
+				C7B592482A2EF8E300D9505B /* BotMessageDetails.h */,
+				C7B5924A2A2EF8E300D9505B /* BotMessageDetails.m */,
+				C7B592502A2EF8E300D9505B /* BotMessageInfo.h */,
+				C7B592512A2EF8E300D9505B /* BotMessageInfo.m */,
+				C7B5923B2A2EF8E200D9505B /* CarouselButton.h */,
+				C7B592352A2EF8E200D9505B /* CarouselButton.m */,
+				C7B5922D2A2EF8E200D9505B /* CarouselElement.h */,
+				C7B592532A2EF8E300D9505B /* CarouselElement.m */,
+				C7B592402A2EF8E200D9505B /* ChatBotButton.h */,
+				C7B592412A2EF8E200D9505B /* ChatBotButton.m */,
+				C7B592362A2EF8E200D9505B /* ChatBotResponse.h */,
+				C7B5922E2A2EF8E200D9505B /* ChatBotResponse.m */,
+				C7B592382A2EF8E200D9505B /* MediaAttach.h */,
+				C7B5922A2A2EF8E200D9505B /* MediaAttach.m */,
+				C7B5922C2A2EF8E200D9505B /* QuickReplies.h */,
+				C7B5923A2A2EF8E200D9505B /* QuickReplies.m */,
+			);
+			path = "Model class";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7B591F02A2EF89300D9505B /* parse-json-in-objective-c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B592202A2EF89600D9505B /* Build configuration list for PBXNativeTarget "parse-json-in-objective-c" */;
+			buildPhases = (
+				C7B591ED2A2EF89300D9505B /* Sources */,
+				C7B591EE2A2EF89300D9505B /* Frameworks */,
+				C7B591EF2A2EF89300D9505B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "parse-json-in-objective-c";
+			productName = "parse-json-in-objective-c";
+			productReference = C7B591F12A2EF89300D9505B /* parse-json-in-objective-c.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7B5920B2A2EF89600D9505B /* parse-json-in-objective-cTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B592232A2EF89600D9505B /* Build configuration list for PBXNativeTarget "parse-json-in-objective-cTests" */;
+			buildPhases = (
+				C7B592082A2EF89600D9505B /* Sources */,
+				C7B592092A2EF89600D9505B /* Frameworks */,
+				C7B5920A2A2EF89600D9505B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7B5920E2A2EF89600D9505B /* PBXTargetDependency */,
+			);
+			name = "parse-json-in-objective-cTests";
+			productName = "parse-json-in-objective-cTests";
+			productReference = C7B5920C2A2EF89600D9505B /* parse-json-in-objective-cTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C7B592152A2EF89600D9505B /* parse-json-in-objective-cUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7B592262A2EF89600D9505B /* Build configuration list for PBXNativeTarget "parse-json-in-objective-cUITests" */;
+			buildPhases = (
+				C7B592122A2EF89600D9505B /* Sources */,
+				C7B592132A2EF89600D9505B /* Frameworks */,
+				C7B592142A2EF89600D9505B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7B592182A2EF89600D9505B /* PBXTargetDependency */,
+			);
+			name = "parse-json-in-objective-cUITests";
+			productName = "parse-json-in-objective-cUITests";
+			productReference = C7B592162A2EF89600D9505B /* parse-json-in-objective-cUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7B591E92A2EF89300D9505B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C7B591F02A2EF89300D9505B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					C7B5920B2A2EF89600D9505B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C7B591F02A2EF89300D9505B;
+					};
+					C7B592152A2EF89600D9505B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C7B591F02A2EF89300D9505B;
+					};
+				};
+			};
+			buildConfigurationList = C7B591EC2A2EF89300D9505B /* Build configuration list for PBXProject "parse-json-in-objective-c" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7B591E82A2EF89300D9505B;
+			productRefGroup = C7B591F22A2EF89300D9505B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7B591F02A2EF89300D9505B /* parse-json-in-objective-c */,
+				C7B5920B2A2EF89600D9505B /* parse-json-in-objective-cTests */,
+				C7B592152A2EF89600D9505B /* parse-json-in-objective-cUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7B591EF2A2EF89300D9505B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B592042A2EF89500D9505B /* LaunchScreen.storyboard in Resources */,
+				C7B592012A2EF89500D9505B /* Assets.xcassets in Resources */,
+				C7B591FF2A2EF89300D9505B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B5920A2A2EF89600D9505B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B592142A2EF89600D9505B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7B591ED2A2EF89300D9505B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B592592A2EF8E300D9505B /* AppointmentMessageDetails.m in Sources */,
+				C7B592692A2EF8E300D9505B /* BotMessage.m in Sources */,
+				C7B592672A2EF8E300D9505B /* AppointmentAttendee.m in Sources */,
+				C7B5925D2A2EF8E300D9505B /* AttachmentPayload.m in Sources */,
+				C7B592622A2EF8E300D9505B /* AppointmentMessage.m in Sources */,
+				C7B5925C2A2EF8E300D9505B /* CarouselButton.m in Sources */,
+				C7B592652A2EF8E300D9505B /* Attachment.m in Sources */,
+				C7B592582A2EF8E300D9505B /* ChatBotResponse.m in Sources */,
+				C7B5925B2A2EF8E300D9505B /* AppointmentAttachment.m in Sources */,
+				C7B591FC2A2EF89300D9505B /* ViewController.m in Sources */,
+				C7B591F62A2EF89300D9505B /* AppDelegate.m in Sources */,
+				C7B5925E2A2EF8E300D9505B /* QuickReplies.m in Sources */,
+				C7B592602A2EF8E300D9505B /* AppointmentEvent.m in Sources */,
+				C7B592662A2EF8E300D9505B /* BotMessageDetails.m in Sources */,
+				C7B592072A2EF89500D9505B /* main.m in Sources */,
+				C7B5925A2A2EF8E300D9505B /* AppointmentButton.m in Sources */,
+				C7B592632A2EF8E300D9505B /* AppointmentTime.m in Sources */,
+				C7B592612A2EF8E300D9505B /* ChatBotButton.m in Sources */,
+				C7B592682A2EF8E300D9505B /* AppointmentInfo.m in Sources */,
+				C7B592642A2EF8E300D9505B /* AppointmentData.m in Sources */,
+				C7B5925F2A2EF8E300D9505B /* AppointmentPayload.m in Sources */,
+				C7B592572A2EF8E300D9505B /* AppointmentAttachmentPayload.m in Sources */,
+				C7B5926B2A2EF8E300D9505B /* CarouselElement.m in Sources */,
+				C7B5926A2A2EF8E300D9505B /* BotMessageInfo.m in Sources */,
+				C7B591F92A2EF89300D9505B /* SceneDelegate.m in Sources */,
+				C7B592562A2EF8E300D9505B /* MediaAttach.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B592082A2EF89600D9505B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B592112A2EF89600D9505B /* parse_json_in_objective_cTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7B592122A2EF89600D9505B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7B5921B2A2EF89600D9505B /* parse_json_in_objective_cUITests.m in Sources */,
+				C7B5921D2A2EF89600D9505B /* parse_json_in_objective_cUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7B5920E2A2EF89600D9505B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7B591F02A2EF89300D9505B /* parse-json-in-objective-c */;
+			targetProxy = C7B5920D2A2EF89600D9505B /* PBXContainerItemProxy */;
+		};
+		C7B592182A2EF89600D9505B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7B591F02A2EF89300D9505B /* parse-json-in-objective-c */;
+			targetProxy = C7B592172A2EF89600D9505B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7B591FD2A2EF89300D9505B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7B591FE2A2EF89300D9505B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7B592022A2EF89500D9505B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7B592032A2EF89500D9505B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7B5921E2A2EF89600D9505B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7B5921F2A2EF89600D9505B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7B592212A2EF89600D9505B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N66HCPTXFG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "parse-json-in-objective-c/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.revechatFlutterSdk2.com.parse-json-in-objective-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C7B592222A2EF89600D9505B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N66HCPTXFG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "parse-json-in-objective-c/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.revechatFlutterSdk2.com.parse-json-in-objective-c";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C7B592242A2EF89600D9505B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N66HCPTXFG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.revechatFlutterSdk2.com.parse-json-in-objective-cTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parse-json-in-objective-c.app/parse-json-in-objective-c";
+			};
+			name = Debug;
+		};
+		C7B592252A2EF89600D9505B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N66HCPTXFG;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.revechatFlutterSdk2.com.parse-json-in-objective-cTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/parse-json-in-objective-c.app/parse-json-in-objective-c";
+			};
+			name = Release;
+		};
+		C7B592272A2EF89600D9505B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N66HCPTXFG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.revechatFlutterSdk2.com.parse-json-in-objective-cUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "parse-json-in-objective-c";
+			};
+			name = Debug;
+		};
+		C7B592282A2EF89600D9505B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N66HCPTXFG;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.revechatFlutterSdk2.com.parse-json-in-objective-cUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "parse-json-in-objective-c";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7B591EC2A2EF89300D9505B /* Build configuration list for PBXProject "parse-json-in-objective-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B5921E2A2EF89600D9505B /* Debug */,
+				C7B5921F2A2EF89600D9505B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B592202A2EF89600D9505B /* Build configuration list for PBXNativeTarget "parse-json-in-objective-c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B592212A2EF89600D9505B /* Debug */,
+				C7B592222A2EF89600D9505B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B592232A2EF89600D9505B /* Build configuration list for PBXNativeTarget "parse-json-in-objective-cTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B592242A2EF89600D9505B /* Debug */,
+				C7B592252A2EF89600D9505B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7B592262A2EF89600D9505B /* Build configuration list for PBXNativeTarget "parse-json-in-objective-cUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7B592272A2EF89600D9505B /* Debug */,
+				C7B592282A2EF89600D9505B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7B591E92A2EF89300D9505B /* Project object */;
+}

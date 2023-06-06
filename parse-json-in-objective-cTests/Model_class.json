@@ -1,0 +1,805 @@
+//test case 1
+{
+  "botName": "Test_may_2023",
+  "from": "0001685465334135-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685465334135-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "3d972f76-bba3-476e-b3d4-13e5f7bc6e2c",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "text",
+        "message": {
+          "text": "I am ReveBot_d, your virtual assistant. How can I help you?"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685465503001,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 2
+{
+  "botName": "Test_may_2023",
+  "from": "0001685465334135-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685465334135-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "860e3c0f-3e0b-4034-8b6a-4802bc0a1792",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "question",
+        "message": {
+          "numberOfRepeat": "1",
+          "validationType": "name",
+          "attributeName": "{{name}}",
+          "text": "How can I address you?",
+          "failureMessage": "You entered wrong format. Please try again"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685465503002,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 3
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "c0259097-539a-4a06-be02-3084f3f38fc9",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "question",
+        "message": {
+          "numberOfRepeat": "1",
+          "failedNode": 544512,
+          "validationType": "email",
+          "attributeName": "{{email}}",
+          "text": "What is your email address?",
+          "failureMessage": "You entered wrong format. Please try again"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685527672838,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 4
+{
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "b1b15aba-7a93-4180-adfe-ae097e4f35d3",
+    "message": [
+      {
+        "message": {
+          "text": "You entered wrong format. Please try again"
+        },
+        "type": "text"
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685527870718,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 5
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "fc443fe1-d190-4be5-92d3-275faf9bc620",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "text",
+        "message": {
+          "text": "Your email is in wrong format"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685528166488,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 6
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "c0ab5dbd-e006-4cdd-aea4-6f9d926f68e9",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "button",
+        "message": {
+          "attachment": {
+            "payload": {
+              "buttons": [
+                {
+                  "payload": "544744",
+                  "title": "Go to text",
+                  "type": "postback"
+                },
+                {
+                  "payload": "544751",
+                  "title": "Go to image node",
+                  "type": "postback"
+                },
+                {
+                  "payload": "544752",
+                  "title": "Go to question node",
+                  "type": "postback"
+                }
+              ],
+              "template_type": "button",
+              "text": "Choose one of many - button 1"
+            },
+            "type": "template"
+          }
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685528166489,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 7
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "b03cb044-1b74-41a3-a4d5-441ffc35a4f0",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "button",
+        "message": {
+          "attachment": {
+            "payload": {
+              "buttons": [
+                {
+                  "payload": "544753",
+                  "title": "Go to quick reply node",
+                  "type": "postback"
+                },
+                {
+                  "payload": "544754",
+                  "title": "Go to carousel node",
+                  "type": "postback"
+                },
+                {
+                  "payload": "544755",
+                  "title": "Go to &quot;Go To node&quot;",
+                  "type": "postback"
+                }
+              ],
+              "template_type": "button",
+              "text": "Choose one of many - button 2"
+            },
+            "type": "template"
+          }
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685528166490,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 8
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "494f499b-0c99-4118-a9a1-4ec30d87477e",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "button",
+        "message": {
+          "attachment": {
+            "payload": {
+              "buttons": [
+                {
+                  "payload": "544756",
+                  "title": "Go to audio node",
+                  "type": "postback"
+                },
+                {
+                  "payload": "544757",
+                  "title": "Go to video node",
+                  "type": "postback"
+                },
+                {
+                  "payload": "544758",
+                  "title": "Go to chat transfer node",
+                  "type": "postback"
+                }
+              ],
+              "template_type": "button",
+              "text": "Choose one of many - button 3"
+            },
+            "type": "template"
+          }
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685528166491,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 9
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "c0591285-652b-4a6c-88b0-05b9f56c1fef",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "button",
+        "message": {
+          "attachment": {
+            "payload": {
+              "buttons": [
+                {
+                  "payload": "544760",
+                  "title": "Go to email node",
+                  "type": "postback"
+                },
+                {
+                  "title": "Go to url test",
+                  "type": "web_url",
+                  "url": "https://stackoverflow.com/questions/48416330/callkit-call-failed-screen-appears?rq=3"
+                },
+                {
+                  "payload": "545612",
+                  "title": "Go to appointment node",
+                  "type": "postback"
+                }
+              ],
+              "template_type": "button",
+              "text": "Choose one of many - button 4"
+            },
+            "type": "template"
+          }
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685594110472,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 10
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "68630cde-c115-4214-8e2e-6be26e8ac1d1",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "text",
+        "message": {
+          "text": "It's a text"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685529330576,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 11
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "daf33a0a-8b13-4cac-938f-713bbec38274",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "image",
+        "message": {
+          "attachment": {
+            "payload": {
+              "url": "https://preview.revechat.com/files/ef89b3a9-dc39-47b2-b27f-64fb73f3f5bf.jpg"
+            },
+            "type": "image"
+          }
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685529580945,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 12
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "3656b7de-cf68-41d4-82ef-8a6673227317",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "question",
+        "message": {
+          "numberOfRepeat": "1",
+          "validationType": "phone",
+          "attributeName": "{{phone}}",
+          "text": "It's a question node - Enter your number",
+          "failureMessage": "You entered wrong number"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685529806314,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 13
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "8e0e2fe2-b3cc-4c9a-90f0-8503022d20e6",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "quick_reply",
+        "message": {
+          "quick_replies": [
+            {
+              "content_type": "text",
+              "payload": "544498",
+              "title": "Go to leading node"
+            },
+            {
+              "content_type": "text",
+              "payload": "544512",
+              "title": "Go to email validation node"
+            }
+          ],
+          "text": "It's a quick reply test"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685530260857,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 14
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "e276f619-b073-47cc-bc76-2e91890bef4d",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "carousel",
+        "message": {
+          "attachment": {
+            "payload": {
+              "elements": [
+                {
+                  "buttons": [
+                    {
+                      "payload": "544498",
+                      "title": "Go to leading node",
+                      "type": "postback"
+                    },
+                    {
+                      "title": "Go to url test",
+                      "type": "web_url",
+                      "url": "https://github.com/daihan054/Weather-app-objective-c-iOS"
+                    }
+                  ],
+                  "image_url": "https://preview.revechat.com/files/203dc3e4-9749-4448-85a9-37f16988e911.jpg",
+                  "subtitle": "1st page",
+                  "title": "id card 1st page",
+                  "default_action": {
+                    "type": "web_url",
+                    "url": "https://github.com/daihan054/Weather-app-objective-c-iOS"
+                  }
+                },
+                {
+                  "buttons": [
+                    {
+                      "payload": "544512",
+                      "title": "Go to email validation node",
+                      "type": "postback"
+                    },
+                    {
+                      "title": "Go to url test",
+                      "type": "web_url",
+                      "url": "https://stackoverflow.com/questions/51982235/how-to-detect-when-the-rpsystembroadcastpickerview-is-tapped"
+                    }
+                  ],
+                  "image_url": "https://preview.revechat.com/files/9f8094e7-c8f7-4bc7-a334-c9be1816dd53.jpg",
+                  "subtitle": "id card back side",
+                  "title": "id card back side",
+                  "default_action": {
+                    "type": "web_url",
+                    "url": "https://stackoverflow.com/questions/51982235/how-to-detect-when-the-rpsystembroadcastpickerview-is-tapped"
+                  }
+                }
+              ],
+              "template_type": "generic"
+            },
+            "type": "template"
+          }
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685530696569,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 15
+{
+  "botName": "Test_may_2023",
+  "from": "0001685262019998-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685262019998-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "69add7fe-706d-4e51-919c-7952e140852e",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "text",
+        "message": {
+          "text": "Your email is in wrong format"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685263915700,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 16
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "98683041-18fd-4502-99f2-5ce8cbb594f2",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "audio",
+        "message": {
+          "attachment": {
+            "payload": {
+              "url": "https://file.revechat.com/files/359cf61b-7420-4c03-9587-62cbefd0f99c.mp3"
+            },
+            "type": "audio"
+          }
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685544869864,
+    "sentBy": "Agent"
+  }
+}
+
+// test case 17
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "f58c26fe-0aff-400a-9dbf-edfe0c3e707b",
+    "message": [
+      {
+        "sendingDelayMillis": 2000,
+        "type": "video",
+        "message": {
+          "attachment": {
+            "payload": {
+              "url": "https://file.revechat.com/files/49f570f7-b68d-4e36-bf80-5c1f7d1d5460.mp4"
+            },
+            "type": "video"
+          }
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685545096877,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 18
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "cff38128-fac0-4d37-af6d-ee9d7bcf2365",
+    "message": [
+      {
+        "type": "chat_transfer",
+        "message": {
+          "transferMsg": "Hey one of our agent is online. You can talk with him."
+        },
+        "status": "pending"
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685548730595,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 19
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "22384b1a-a1f1-4c36-9acc-d216bb0f319f",
+    "message": [
+      {
+        "type": "appointment",
+        "message": {
+          "meeting_title": "Test for bot",
+          "available_datetime": [
+            {
+              "from": "09:00 am",
+              "to": "06:00 pm",
+              "day": "sunday",
+              "status": "1"
+            },
+            {
+              "from": "09:00 am",
+              "to": "06:00 pm",
+              "day": "monday",
+              "status": "0"
+            },
+            {
+              "from": "09:00 am",
+              "to": "06:00 pm",
+              "day": "tuesday",
+              "status": "1"
+            },
+            {
+              "from": "09:00 am",
+              "to": "06:00 pm",
+              "day": "wednesday",
+              "status": "0"
+            },
+            {
+              "from": "09:00 am",
+              "to": "06:00 pm",
+              "day": "thursday",
+              "status": "1"
+            },
+            {
+              "from": "09:00 am",
+              "to": "06:00 pm",
+              "day": "friday",
+              "status": "0"
+            },
+            {
+              "from": "09:00 am",
+              "to": "06:00 pm",
+              "day": "saturday",
+              "status": "1"
+            }
+          ],
+          "meeting_description": "Test for bot",
+          "slot_not_available_msg": "Sorry no slots available",
+          "meeting_timezone": "Asia/Dhaka",
+          "attachment": {
+            "payload": {
+              "buttons": [
+                {
+                  "payload": {
+                    "type": "calendar",
+                    "value": "calender"
+                  },
+                  "title": "Select your slot",
+                  "type": "postback"
+                }
+              ],
+              "template_type": "button",
+              "text": "Test for bot"
+            },
+            "type": "template"
+          },
+          "google_login": true,
+          "success_msg": "Appointment confirmed horray!!",
+          "heading_text": "Test for bot",
+          "meeting_duration": "30"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685587399643,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 20
+{
+  "botName": "Test_may_2023",
+  "from": "0001685527594196-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685527594196-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "baa7cfca-cf4b-4781-8633-51f83c627b85",
+    "message": [
+      {
+        "type": "text",
+        "message": {
+          "addEvent": {
+            "summary": "Test for bot",
+            "attendees": [
+              {
+                "name": "Daihan",
+                "email": "daihan@revesoft.com"
+              }
+            ],
+            "slotNotAvailableMsg": "Sorry no slots available",
+            "description": "Test for bot",
+            "startTime": 1686632400000,
+            "endTime": 1686634200000,
+            "title": "2023-06-13 11:00 AM (UTC +06:00)",
+            "successMessage": "Appointment confirmed horray!!",
+            "meetingTimezone": "Asia/Dhaka"
+          },
+          "text": "Appointment confirmed horray!!"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685588109380,
+    "sentBy": "Agent"
+  }
+}
+
+//test case 21
+{
+  "botName": "Test_may_2023",
+  "from": "0001685262019998-f23c928effffae20-0001",
+  "botid": "1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+  "to": "0001685262019998-f23c928effffae20-0001",
+  "type": 4096,
+  "account": "8511385",
+  "messaging": {
+    "messageId": "be5f4b66-2a5b-438b-8bd3-5a7c7c866e10",
+    "message": [
+      {
+        "type": "text",
+        "message": {
+          "text": "Sorry! I am still learning :) Can you please be more specific to your query?"
+        }
+      }
+    ],
+    "lastRecievedMsgTimeStamp": 0,
+    "deliveryStatus": "delivered",
+    "timestamp": 1685268088921,
+    "sentBy": "Agent"
+  }
+}
