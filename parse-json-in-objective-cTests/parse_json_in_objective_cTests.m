@@ -1679,5 +1679,176 @@
     XCTAssertEqualObjects(messageInfo.type, @"text");
 }
 
+- (void)test_JSON022 {
+    NSDictionary *json = @{
+        @"botName": @"Test_may_2023",
+        @"from": @"0001686032999549-f23c928effffae20-0001",
+        @"botid": @"1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+        @"to": @"0001686032999549-f23c928effffae20-0001",
+        @"type": @(4096),
+        @"account": @"8511385",
+        @"messaging": @{
+            @"messageId": @"a003ed21-1b0a-4179-b4e8-20d89b87f725",
+            @"message": @[
+                @{
+                    @"sendingDelayMillis": @(2000),
+                    @"type": @"question",
+                    @"message": @{
+                        @"numberOfRepeat": @"1",
+                        @"validationType": @"number",
+                        @"attributeName": @"{{numeric_number}}",
+                        @"text": @"Its a question node - Enter numeric number",
+                        @"failureMessage": @"You entered numeric number format. Please try again"
+                    }
+                }
+            ],
+            @"lastRecievedMsgTimeStamp": @(0),
+            @"deliveryStatus": @"delivered",
+            @"timestamp": @(1686033301922),
+            @"sentBy": @"Agent"
+        }
+    };
+
+    ChatBotResponse *response = [[ChatBotResponse alloc] initWithDictionary:json];
+
+    // Perform assertions
+    XCTAssertEqualObjects(response.botName, @"Test_may_2023");
+    XCTAssertEqualObjects(response.from, @"0001686032999549-f23c928effffae20-0001");
+    XCTAssertEqualObjects(response.botid, @"1c2a4387-e8e6-4414-b383-ab7c6f2c1581");
+    XCTAssertEqualObjects(response.to, @"0001686032999549-f23c928effffae20-0001");
+    XCTAssertEqual(response.type, 4096);
+    XCTAssertEqualObjects(response.account, @"8511385");
+    XCTAssertEqualObjects(response.messaging.messageId, @"a003ed21-1b0a-4179-b4e8-20d89b87f725");
+    XCTAssertEqual(response.messaging.lastRecievedMsgTimeStamp, 0);
+    XCTAssertEqualObjects(response.messaging.deliveryStatus, @"delivered");
+    XCTAssertEqual(response.messaging.timestamp, 1686033301922);
+    XCTAssertEqualObjects(response.messaging.sentBy, @"Agent");
+
+    NSMutableArray<BotMessageInfo *> *messages = response.messaging.message;
+    XCTAssertNotNil(messages);
+    XCTAssertEqual(messages.count, 1);
+
+    BotMessageInfo *messageInfo = messages[0];
+    XCTAssertEqual(messageInfo.sendingDelayMillis, 2000);
+    XCTAssertEqualObjects(messageInfo.type, @"question");
+
+    MediaAttach* questionMessage = messageInfo.message;
+    XCTAssertEqualObjects(questionMessage.numberOfRepeat, @"1");
+    XCTAssertEqualObjects(questionMessage.validationType, @"number");
+    XCTAssertEqualObjects(questionMessage.attributeName, @"{{numeric_number}}");
+    XCTAssertEqualObjects(questionMessage.text, @"Its a question node - Enter numeric number");
+    XCTAssertEqualObjects(questionMessage.failureMessage, @"You entered numeric number format. Please try again");
+}
+
+- (void)test_JSON023 {
+    NSDictionary *json = @{
+        @"botName": @"Test_may_2023",
+        @"from": @"0001686032999549-f23c928effffae20-0001",
+        @"botid": @"1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+        @"to": @"0001686032999549-f23c928effffae20-0001",
+        @"type": @(4096),
+        @"account": @"8511385",
+        @"messaging": @{
+            @"messageId": @"ec6d8eb7-0dfc-4dc4-8300-150cd5277a46",
+            @"message": @[
+                @{
+                    @"sendingDelayMillis": @(2000),
+                    @"type": @"question",
+                    @"message": @{
+                        @"numberOfRepeat": @"1",
+                        @"validationType": @"otp",
+                        @"attributeName": @"{{my_otp}}",
+                        @"text": @"Its a question node - Enter OTP",
+                        @"failureMessage": @"You entered wrong OTP format. Please try again"
+                    }
+                }
+            ],
+            @"lastRecievedMsgTimeStamp": @(0),
+            @"deliveryStatus": @"delivered",
+            @"timestamp": @(1686033462099),
+            @"sentBy": @"Agent"
+        }
+    };
+
+    ChatBotResponse *response = [[ChatBotResponse alloc] initWithDictionary:json];
+
+    // Perform assertions
+    XCTAssertEqualObjects(response.botName, @"Test_may_2023");
+    XCTAssertEqualObjects(response.from, @"0001686032999549-f23c928effffae20-0001");
+    XCTAssertEqualObjects(response.botid, @"1c2a4387-e8e6-4414-b383-ab7c6f2c1581");
+    XCTAssertEqualObjects(response.to, @"0001686032999549-f23c928effffae20-0001");
+    XCTAssertEqual(response.type, 4096);
+    XCTAssertEqualObjects(response.account, @"8511385");
+    XCTAssertEqualObjects(response.messaging.messageId, @"ec6d8eb7-0dfc-4dc4-8300-150cd5277a46");
+    XCTAssertEqual(response.messaging.lastRecievedMsgTimeStamp, 0);
+    XCTAssertEqualObjects(response.messaging.deliveryStatus, @"delivered");
+    XCTAssertEqual(response.messaging.timestamp, 1686033462099);
+    XCTAssertEqualObjects(response.messaging.sentBy, @"Agent");
+
+    NSMutableArray<BotMessageInfo *> *messages = response.messaging.message;
+    XCTAssertNotNil(messages);
+    XCTAssertEqual(messages.count, 1);
+
+    BotMessageInfo *messageInfo = messages[0];
+    XCTAssertEqual(messageInfo.sendingDelayMillis, 2000);
+    XCTAssertEqualObjects(messageInfo.type, @"question");
+
+    MediaAttach *questionMessage = messageInfo.message;
+    XCTAssertEqualObjects(questionMessage.numberOfRepeat, @"1");
+    XCTAssertEqualObjects(questionMessage.validationType, @"otp");
+    XCTAssertEqualObjects(questionMessage.attributeName, @"{{my_otp}}");
+    XCTAssertEqualObjects(questionMessage.text, @"Its a question node - Enter OTP");
+    XCTAssertEqualObjects(questionMessage.failureMessage, @"You entered wrong OTP format. Please try again");
+}
+
+- (void)test_JSON024 {
+    NSDictionary *json = @{
+        @"from": @"0001686032999549-f23c928effffae20-0001",
+        @"botid": @"1c2a4387-e8e6-4414-b383-ab7c6f2c1581",
+        @"to": @"0001686032999549-f23c928effffae20-0001",
+        @"type": @(4096),
+        @"account": @"8511385",
+        @"messaging": @{
+            @"messageId": @"5e08eb49-bb41-444f-8121-aa9a076f3a43",
+            @"message": @[
+                @{
+                    @"message": @{
+                        @"text": @"Your OTP token has been expired."
+                    },
+                    @"type": @"text"
+                }
+            ],
+            @"lastRecievedMsgTimeStamp": @(0),
+            @"deliveryStatus": @"delivered",
+            @"timestamp": @(1686033774231),
+            @"sentBy": @"Agent"
+        }
+    };
+
+    ChatBotResponse *response = [[ChatBotResponse alloc] initWithDictionary:json];
+
+    // Perform assertions
+    XCTAssertEqualObjects(response.from, @"0001686032999549-f23c928effffae20-0001");
+    XCTAssertEqualObjects(response.botid, @"1c2a4387-e8e6-4414-b383-ab7c6f2c1581");
+    XCTAssertEqualObjects(response.to, @"0001686032999549-f23c928effffae20-0001");
+    XCTAssertEqual(response.type, 4096);
+    XCTAssertEqualObjects(response.account, @"8511385");
+    XCTAssertEqualObjects(response.messaging.messageId, @"5e08eb49-bb41-444f-8121-aa9a076f3a43");
+    XCTAssertEqual(response.messaging.lastRecievedMsgTimeStamp, 0);
+    XCTAssertEqualObjects(response.messaging.deliveryStatus, @"delivered");
+    XCTAssertEqual(response.messaging.timestamp, 1686033774231);
+    XCTAssertEqualObjects(response.messaging.sentBy, @"Agent");
+
+    NSMutableArray<BotMessageInfo *> *messages = response.messaging.message;
+    XCTAssertNotNil(messages);
+    XCTAssertEqual(messages.count, 1);
+
+    BotMessageInfo *messageInfo = messages[0];
+    XCTAssertEqualObjects(messageInfo.type, @"text");
+    XCTAssertEqualObjects( messageInfo.message.text, @"Your OTP token has been expired.");
+    
+    NSLog(@"MediaAttach is %@",messageInfo.message);
+    NSLog(@"numberOfRepeat is %@",messageInfo.message.numberOfRepeat);
+}
 
 @end
